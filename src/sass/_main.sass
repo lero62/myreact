@@ -1,0 +1,442 @@
+.main-wrapper
+	padding: 0
+	min-width: 32rem
+	position: relative
+	overflow: hidden
+	opacity: 1
+
+.main
+	width: 100%
+	min-width: 32rem
+	text-align: left
+
+.container
+	min-width: 32rem
+	max-width: $container
+
+	position: relative
+	+min($mw2 + 1)
+		padding-right: 2.5rem !important
+		padding-left: 2.5rem !important
+
+.wrap
+	display: flex
+	align-items: flex-start
+	&__aside
+		flex: none
+		width: 16.8rem
+		margin-right: 3rem
+		&--right
+			width: 17.8rem
+			margin-right: 0 !important
+			margin-left: 3rem
+	&__content
+		flex: 1
+		min-width: 1px
+
+/* Side ====================================*/
+.aside-link
+	margin-bottom: .7rem
+	font-size: 1.2rem
+	color:#B0B0B0
+	display: inline-block
+	vertical-align: middle
+	line-height: 1.2
+	border-bottom: .1rem solid
+	&:hover
+		border-color: transparent
+.aside-block
+	margin-bottom: 5.7rem
+	&__head
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-bottom: 1rem
+		.aside-title
+			margin-bottom: 1rem
+			margin-right: 1rem
+
+	&__item
+		margin-bottom: 3rem
+		&:last-child
+			margin-bottom: 0
+
+	.tags-menu  + .tags-list
+		margin-top: 3.2rem
+	.tag
+		background: #E9E9E9
+		&:hover
+			background: #d9d9d9
+
+.aside-head
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	&__dropdown
+		margin-left: auto
+		margin-bottom: 1.5rem
+		padding-left: 2rem
+	.aside-title
+		margin-right: 2rem
+	.aside-link
+		margin-bottom: 1.5rem
+
+.aside-title
+	font-size: 1.6rem
+	font-weight: 700
+	color: #C4C4C4
+	text-transform: uppercase
+	line-height: 1.6rem
+	margin-bottom: 1.5rem
+
+.aside-subtitle
+	font-size: 1.2rem
+	font-weight: 700
+	color: #B0B0B0
+	text-transform: uppercase
+	line-height: 1.2rem
+	margin-bottom: 1.3rem
+
+.aside-menu, .mobile-menu
+	margin-left: -0.8rem
+	margin-right: -0.8rem
+	&__item
+		margin-bottom: 0.5rem
+		&:last-child
+			margin-bottom: 0
+	&__link
+		position: relative
+		display: block
+		padding: .9rem .8rem
+		display: flex
+		align-items: center
+		color: #585858
+		border-radius: .6rem
+		font-size: 1.4rem
+
+		.icon
+			width: 2.2rem
+			height: 2.2rem
+			color: #B0B0B0
+			top: -.1rem
+			margin-right: 1rem
+			fill: none
+
+		.kbd
+			background: $color-danger
+
+		&:hover
+			text-decoration: none
+			background: rgba(#E9E9E9, 0.7)
+			color: $color
+			.icon
+				color: #808080
+
+		&.active
+			background: rgba(#E9E9E9, 0.7)
+			color: $color
+			.icon
+				color: #808080
+
+	&__text
+		flex: 1
+
+.tags-menu
+	margin-left: -0.8rem
+	margin-right: -0.8rem
+	&__link
+		position: relative
+		display: block
+		padding: .6rem .8rem
+		display: flex
+		align-items: center
+		color: #585858
+		border-radius: .6rem
+		font-size: 1.4rem
+
+		&:hover
+			text-decoration: none
+			background: rgba(#E9E9E9, 0.7)
+			color: $color
+			.icon
+				color: #808080
+
+		&.active
+			background: rgba(#E9E9E9, 0.7)
+			color: $color
+			.icon
+				color: #808080
+
+	&__text
+		flex: 1
+
+	.kbd
+		margin-left: 1rem
+
+.aside-filter
+	&__block
+		padding-top: 1rem
+		padding-bottom: 2.6rem
+		border-bottom: .1rem solid #EEEEEE
+		margin-bottom: 1.6rem
+		.checkbox, .radio
+			font-size: 1.4rem
+			display: block
+
+		.tags-list .add-button
+			display: inline-block
+			vertical-align: middle
+			margin-right: .2rem
+		.add-button .icon
+			font-size: 2.4rem
+
+	&__title
+		font-size: 1.4rem
+		font-weight: 400
+		color: #585858
+		margin-bottom: 1.5rem
+
+	&__field
+		margin-bottom: 1.5rem
+
+.card-multipass
+	margin-bottom: 4rem
+	&__head
+		margin-bottom: 1.8rem
+		box-shadow: 5px 5px 30px rgba(255, 252, 0, 0.4)
+		background: #fffc00
+		border-radius: .5rem
+		height: 10.8rem
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 1.5rem 2rem
+	&__title
+		font-size: 1.6rem
+		font-weight: 700
+		line-height: 1.3
+		text-transform: capitalize
+
+	&__btn
+		margin-top: 2.6rem
+
+.cm-wrap
+	width: 100%
+	display: flex
+	align-items: center
+	&__img
+		flex: none
+		margin-right: 1.3rem
+
+		img
+			width: 3.6rem
+	&__info
+		flex: 1
+		min-width: 1px
+	&__title
+		font-size: 1.2rem
+		line-height: 1.3
+		display: block
+	&__text
+		font-size: .8rem
+		display: block
+		margin-top: .3rem
+
+.card-event
+	text-align: center
+	background: #fff
+	margin-bottom: 3rem
+	position: relative
+	display: flex
+	flex-direction: column
+	width: 100%
+
+	&__link
+		+coverdiv
+		&:hover 	~ .card-event__body
+			.card-event__title
+				text-decoration: underline
+
+	&__body
+		padding: 3rem 1.2rem
+		flex: 1
+	&__img
+
+		width: 7rem
+		height: 7rem
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: 1.9rem
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 50%
+
+	&__title
+		font-size: 1.8rem
+		font-weight: 700
+		line-height: 1.7rem
+		text-transform: capitalize
+		margin-bottom: 0.4rem
+
+	&__date
+		font-size: 1.4rem
+		color: #585858
+
+	&__foot
+		padding: 0 1.2rem 2rem
+		flex: none
+		&-txt
+
+			font-size: 1.4rem
+			& + .btn
+				margin-top: 2rem
+			.txt-icon
+				margin-bottom: 0.5rem
+		.btn
+			min-width: 11rem
+			padding-left: 1rem
+			padding-right: 1rem
+	&__det-item
+		width: 100%
+		font-size: 1.8rem
+		font-weight: 700
+		line-height: 1.2
+		margin: .3rem	0
+	&__access
+		color: $color-danger
+		font-size: 1.2rem
+		display: inline-block
+		margin-top: 1.7rem
+		.icon
+			fill: currentColor
+			color: $color-danger
+			width: 1.7rem
+			height: 1.6rem
+			margin-right: .2rem
+			vertical-align: middle
+			top: -.2rem
+
+	&--active
+		.card-event__foot
+			background: $color-danger !important
+			.btn--default
+				border-color: #fff
+				color: #fff
+
+.events-list
+	&--horizontal
+		display: flex
+		flex-wrap: wrap
+		margin-left: -1.5rem
+		margin-right: -1.5rem
+
+		.card-event
+
+			display: flex
+			flex-direction: column
+			width: calc(25% - 3rem)
+			margin-left: 1.5rem
+			margin-right: 1.5rem
+
+			&__body
+				padding: 3rem 2rem
+				background: #FCFCFC
+			&__img
+				width: 11.4rem
+				height: 11.4rem
+				margin-bottom: 2.5rem
+
+			&__title
+				font-size: 2.4rem
+				line-height: 1.1
+				margin-bottom: 1.8rem
+
+			&__date
+				font-size: 1.8rem
+				color: $color
+
+			&__foot
+				padding: 2rem 2rem
+
+				.btn, .link
+					position: relative
+					z-index: 3
+					min-width: 15.5rem
+			&__price
+				font-size: 5rem
+				line-height: 1
+				color: #585858
+				text-decoration: line-through
+
+	&--smiles-bg
+		.card-event
+			background:  url('../assest/img/event-big-mask.png') no-repeat center
+			background-size: cover
+			&__body
+				background: none
+
+	&--bg
+		.card-event__body, .card-event__foot
+			background: #F6F6F6
+
+	&--small
+		display: flex
+		flex-wrap: wrap
+		margin-left: -1rem
+		margin-right: -1rem
+
+		.card-event
+			width: 14.6rem
+			padding-left: 1rem
+			padding-right: 1rem
+			&__body
+				padding: 0
+			&__img
+				width: 6rem
+				height: 6rem
+				margin-bottom: 1.5rem
+			&__title
+				font-size: 1.4rem
+			&__date
+				font-size: 1.1rem
+/* End Side ================================*/
+
+/* Content =================================*/
+.w-section
+	margin-top: 4.9rem
+	margin-bottom: 4.9rem
+
+.popular-today-swiper,
+.based-interests-swiper,
+.advanced-topics-swiper,
+.react-summit-swiper,
+.content-swiper
+	position: relative
+	.swiper-slide
+		width: auto !important
+		max-width: 90%
+		padding-right: 3rem
+		height: auto !important
+		&:last-child
+			padding-right: 0
+	.article-box
+		width: 35.8rem
+		margin-bottom: 0
+		max-width: 100%
+
+		+min($mw + 1)
+			&--author-lg
+				width: 74.6rem
+				max-width: 100%
+
+	@media (any-hover: hover)
+		&:hover
+
+			.swiper-button-prev,
+			.swiper-button-next
+				opacity: 1
+
+/* End Content =============================*/

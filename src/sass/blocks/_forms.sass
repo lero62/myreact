@@ -1,0 +1,406 @@
+$form-height: 4rem
+$form-size: 1.6rem
+$form-weight: 400
+$form-color: $color
+$form-border: .1rem solid #D1D5DB
+$form-bg: #fff
+$form-radius: .5rem
+$form-placeholder: #aaa
+
+$checkWidth: 1.6rem
+
+/* Form =========================================== */
+.form
+	&-row
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -1.5rem
+		&__col
+			padding: 0 1.5rem
+	&-field
+		margin-bottom: 2rem
+		position: relative
+		&.mb35
+			margin-bottom: 3.5rem
+		&--sm
+			margin-bottom: 1rem
+
+	&-input
+		display: block
+		width: 100%
+		height: $form-height
+		padding: 0 1rem
+		color: $form-color
+		font: $form-weight $form-size $font-family, Arial, sans-serif
+		line-height: normal
+		border: $form-border
+		background: $form-bg
+		border-radius: $form-radius
+		transition: all 0.2s linear
+		&:focus
+			box-shadow: 0 0 .1rem .1rem $color-danger
+			border-color: $color-danger
+			+placeholder
+				opacity: 0
+		+placeholder
+			color: $form-placeholder
+			transition: opacity 0.2s linear
+		&--sm
+			height: 3.4rem
+			font-size: 1.2rem
+		&.error
+			border-color: #EF4444
+		&.valid
+			border-color: green
+
+		+min($mw2 + 1)
+			&.inline-md
+				max-width: 37rem
+
+	&-button
+		margin-top: 3.3rem
+		margin-left: -1rem
+		margin-right: -1rem
+		.btn
+			margin-right: 1rem
+			margin-left: 1rem
+
+textarea.form-input
+	height: auto
+	min-height: 15rem
+	padding-top: .9rem
+	padding-bottom: .9rem
+	line-height: 1.65
+	resize: none
+	overflow: auto
+
+label
+	display: block
+	font-weight: 400
+	font-size: 1.4rem
+	margin-bottom: .5rem
+
+.filedset
+	position: relative
+	margin: 2.4rem 0
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		top: 50%
+		left: 0
+		right: 0
+		height: 0.1rem
+		background: #D1D5DB
+
+	.legend
+		font-size: 1.4rem
+		padding: 0 .8rem
+		color: #585858
+		background: #fff
+		display: inline-block
+		position: relative
+		z-index: 2
+	&--center
+		text-align: center
+
+.form-each
+	position: relative
+	display: flex
+	flex-wrap: wrap
+	margin-left: -1rem
+	margin-right: -1rem
+
+	&__input
+		position: relative
+		max-width: 37rem
+
+		width: 100%
+		flex: 1 0 auto
+		min-width: 1px
+		padding-left: 1rem
+		padding-right: 1rem
+		&:after
+			content: ''
+			display: none
+			background: url('../../assest/img/sprite/info.svg') no-repeat center
+			width: 1.6rem
+			height: 1.6rem
+			background-size: 1.6rem 1.6rem
+			position: absolute
+			top: 1.2rem
+			right: 3rem
+			font-size: 0
+
+	&__text
+		font-size: 1.2rem
+		color: #EF4444
+
+		padding-left: 1rem
+		padding-right: 1rem
+		align-self: center
+		flex: none
+		width: 27rem
+		margin: .4rem 0
+		display: none
+
+	&__button
+		padding-left: 1rem
+		padding-right: 1rem
+		margin-bottom: 1rem
+	&.align-items-center
+		margin-bottom: -1rem
+		.form-each__input
+			margin-bottom: 1rem
+	&.error
+		.form-each__input
+			&:after
+				display: block
+		.form-each__text
+			display: block
+		.form-input
+			padding-right: 5.5rem
+			border-color: $color-danger
+
+	&--block
+		.form-each__input
+			max-width: none
+
++max($mw2)
+	.form-each__input
+		max-width: none
+
+/* Form ============================================ */
+
+/* Checkbox  ======================================= */
+.checkbox, .radio
+	display: block
+	cursor: pointer
+	font-size: $form-size
+	font-weight: 400
+	margin: 0
+	line-height: $checkWidth
+	position: relative
+
+	input
+		display: none
+
+	&__text
+		padding-left: 2.5rem
+		display: block
+
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: $checkWidth
+			height: $checkWidth
+			background: $form-bg
+			border: $form-border
+			border-radius: .4rem
+			transition: border-color 0.2s linear
+
+.checkbox input:checked ~ .checkbox__text
+	&:before
+		background: url('../../assest/img/sprite/check.svg') no-repeat center
+		background-size: 1rem .7rem
+
+.radio input:checked ~ .radio__text
+
+	&__text:before
+		border-radius: 50%
+
+.check-list
+	.checkbox, .radio
+		margin-bottom: 1rem
+
+	&.mt15
+		margin-top: 1.5rem
+
+/* Checkbox  ======================================= */
+
+/* Select  ========================================= */
+select.form-input
+	background-image: url('../../assest/img/select-arrow.svg')
+	background-repeat: no-repeat
+	background-position: right 15px center
+	background-size: .9rem .6rem
+	appearance: none
+	padding-right: 4rem !important
+
+select::-ms-expand
+	display: none
+
+.dropdown-sel
+	position: relative
+
+	&__button
+		display: flex
+		align-items: center
+		white-space: nowrap
+		height: 3.9rem
+		background: #fff
+		border-radius: .4rem
+		padding: 0 1.5rem
+		position: relative
+		cursor: pointer
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			right: 1.5rem
+			height: 100%
+			width: 1.5rem
+			background: url('../../assest/img/select-arrow.svg') no-repeat center
+			background-size: .9rem .6rem
+	&__label
+		font-size: 1.2rem
+		color: #585858
+		flex: none
+		margin-right: 1rem
+	&__text
+		font-size: 1.2rem
+		font-weight: 700
+		color: #585858
+
+		min-width: 1px
+		margin-right: 1.9rem
+		+text-overflow
+
+	&__block
+		background: #FFFFFF
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15)
+		border-radius: 4px
+		position: absolute
+		z-index: 15
+		top: 100%
+		margin-top: .7rem
+		left: 0
+		max-width: 100vw
+		padding: .6rem 0
+		display: none
+
+	&__list
+		&-item
+			padding: .7rem 2rem
+			cursor: pointer
+			font-size: 1.2rem
+			color: #585858
+			&:hover
+				background: lighten(#F1F1F1, 3%)
+			&._active
+				background: #F1F1F1
+
+	&._open
+		.dropdown-sel__block
+			display: block
+	&--right
+		.dropdown-sel__button
+			justify-content: flex-end
+			text-align: right
+		.dropdown-sel__block
+			left: auto
+			right: 0
+			text-align: right
+			.ds-item
+				justify-content: flex-end
+
+.ds-item
+	display: flex
+	align-items: center
+	&__img
+		flex: none
+		width: 2rem
+		height: 2rem
+		border-radius: 50%
+		object-fit: cover
+		margin-right: 1rem
+	&__text
+		font-size: 1.2rem
+		color: #585858
+
+/* Select  ========================================= */
+
+/* File  =========================================== */
+.add-file
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	margin-left: -0.3rem
+	margin-right: -0.3rem
+	margin-bottom: -0.3rem
+	&__input
+		width: 16rem
+		height: 10rem
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		background: #fff
+		border: .2rem dashed #D5D5D5
+		border-radius: .5rem
+		cursor: pointer
+		margin: .3rem
+		input
+			display: none
+		&-icon
+			.icon
+				font-size: 2.7rem
+				color: #B0B0B0
+				display: block
+
+	&__item
+		width: 16rem
+		height: 10rem
+		background: #F2F2F2
+		border-radius: .5rem
+		cursor: pointer
+		margin: .3rem
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		position: relative
+		&-icon
+			margin-bottom: 0.4rem
+			.icon
+				font-size: 2.1rem
+				color: #8E8E8E
+				display: block
+		&-title
+			font-size: 1.4rem
+			font-weight: 700
+			text-align: center
+			width: 100%
+			color:#8E8E8E
+			+text-overflow
+		&-remove
+			opacity: 0
+			+coverdiv
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			background: rgba(0, 0, 0, 0.6)
+			border-radius: inherit
+			.icon
+				font-size: 3rem
+				color: #fff
+				display: block
+
+		@media (any-hover: hover)
+			&:hover
+				.add-file__item-remove
+					opacity: 1
+
+/* File  =========================================== */
+
+/* Media */
+/* --------------------------------------------------------------- */
++max($mw3)
+	.add-file
+		&__input
+			width: calc(100% - .6rem)
+		&__item
+			width: calc(50% - .6rem)

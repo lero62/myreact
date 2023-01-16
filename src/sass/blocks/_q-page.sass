@@ -1,0 +1,702 @@
+
+.page-main-wrapper
+	padding-bottom: 3rem
+.page-main
+	background: #fff
+	margin-top: -5rem
+
+	overflow: hidden
+	padding: 0 var(--page-gutters)
+	&__content
+		padding: 4rem 0
+
+	&__head
+		margin-bottom: 4rem
+		&-wrap
+			display: flex
+			align-items: flex-start
+			.btn
+				margin-top: 1.2rem
+				margin-left: 4rem
+
+	&__title
+		margin-bottom: 1rem
+
+	&__descr
+		max-width: 65rem
+
+	&__heading
+		margin-left: calc(var(--page-gutters) * -1 )
+		margin-right: calc(var(--page-gutters) * -1 )
+		padding-left: var(--page-gutters)
+		padding-right: var(--page-gutters)
+
+	.article-box--xs, .article-box--sm, .reviews-box
+		&:hover
+			background: #f7f7f7
+
+	.alert
+		margin-left: calc(var(--page-gutters) * -1 )
+		margin-right: calc(var(--page-gutters) * -1 )
+		padding-left: var(--page-gutters)
+		padding-right: var(--page-gutters)
+
+.page-section
+	padding-top: 7.5rem
+	&__head
+		margin-bottom: 3.5rem
+		h2
+			font-size: 2.2rem
+			margin-bottom: 1.2rem
+		p
+			margin-bottom: 1.2rem
+			max-width: 62rem
+			line-height: 1.5
+
+	&__gutters
+		margin-left: -6.5rem
+		margin-right: -6.5rem
+
+	&--b-padding
+		padding-bottom: 7.5rem
+	&--outside
+		margin-left: calc(var(--page-gutters) * -1 )
+		margin-right: calc(var(--page-gutters) * -1 )
+		padding-left: var(--page-gutters)
+		padding-right: var(--page-gutters)
+		background: #F9F9F9
+		padding-bottom: 6rem
+		padding-top: 6rem
+		.article-box, .profile-item
+			background: #fff
+	&--outside-normal
+		margin-left: calc(var(--page-gutters) * -1 )
+		margin-right: calc(var(--page-gutters) * -1 )
+		padding-left: var(--page-gutters)
+		padding-right: var(--page-gutters)
+		background: #F9F9F9
+
+		.article-box, .profile-item
+			background: #fff
+	&--black
+		background: #1A1A1A
+		color: #fff
+	&--tp0
+		padding-top: 0 !important
+	&--sm
+		padding-top: 4rem
+		&.page-section--b-padding
+			padding-bottom: 4rem
+
+.page-tabs__gutters
+	margin-left: -2.8rem
+	margin-right: -2.8rem
+
+.error-main
+	padding: 16.9rem 0
+	min-height: calc(100vh - 7rem)
+
+.error-wrap
+	display: flex
+
+	&__img
+		flex: none
+		width: 43.7rem
+		margin-right: 6.7rem
+	&__content
+		flex: 1
+		min-width: 1px
+		align-self: center
+
+	.btn
+		margin-top: 2rem
+		min-width: 20.6rem
+		height: 4.4rem
+
+.alert
+	background: #FFFC00
+	padding: 1.5rem 3rem
+	font-size: 1.6rem
+	font-weight: 400
+	.icon
+		display: inline-block
+		vertical-align: middle
+		&-gift
+			fill: none
+			stroke-width: .1rem
+			font-size: 3rem
+			top: -.2rem
+
+.art-main
+	+margin
+	&__head
+		margin-bottom: 5.5rem
+		h1
+			font-size: 4.6rem
+			margin-bottom: 1.3rem
+			line-height: 1.2
+		h2
+			font-size: 3rem
+			color: $color-danger
+			margin-bottom: 0.7rem
+
+	&__button
+		margin-top: 3.5rem
+
+.kbdsel
+	background: #F0F0F0
+	border-radius: .5rem
+	padding: .7rem
+
+.multipass-inner
+	display: flex
+	align-items: flex-start
+	&__img
+		flex: none
+		margin-right: 7rem
+		width: 32.5rem
+
+		box-shadow: 5px 5px 30px rgba(255, 252, 0, 0.4)
+		background: #fffc00
+		border-radius: 1rem
+		height: 19.5rem
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 1.5rem 3.5rem
+		.cm-wrap__img
+			margin-right: 2.5rem
+			img
+				width: 6.4rem
+
+		.cm-wrap__title
+			font-size: 2.2rem
+		.cm-wrap__text
+			font-size: 1.5rem
+
+	&__content
+		flex: 1
+		min-width: 1px
+		line-height: 1.75
+		h4
+			font-size: 2.2rem
+			margin-bottom: 2rem
+		ul
+			list-style-type: disc
+			margin-left: 2.4rem
+
+			margin-bottom: 2rem
+
+		.ym-items
+			margin-bottom: 2.5rem
+			&__item
+				max-width: none
+				width: auto
+				margin-right: 3rem
+				&:last-child
+					margin-right: 0
+	&__btn
+		margin-top: 4rem
+
+.your-multipass
+	margin: 6.5rem 0
+	&__wrap
+		display: flex
+		align-items: flex-start
+		+min(1401px)
+			.your-multipass-inner
+				width: 54rem
+				flex: none
+				height: 31.9rem
+				margin-right: 6.9rem
+				margin-left: 0
+				&__img
+					width: 16.6rem
+					height: 16.6rem
+					margin-right: 3rem
+			.your-multipass__link
+				text-align: left
+
+	&__content
+		flex: 1
+		min-width: 1px
+		align-self: center
+
+	&__title
+		font-size: 2.2rem
+		font-weight: 700
+		line-height: 1.2
+		margin-bottom: 2rem
+	&-inner
+		background: #FFFC00
+		box-shadow: 5px 5px 30px rgba(255, 252, 0, 0.4)
+		border-radius: 1.5rem
+		width: 64.7rem
+		height: 38.2rem
+		margin: 0 auto
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 4rem
+		&__img
+			width: 19.5rem
+			height: 19.5rem
+			border-radius: 50%
+			border: 1rem solid #343434
+			margin-right: 4rem
+			flex: none
+			img
+				height: 100%
+				width: 100%
+				object-fit: cover
+
+		&__name
+			width: min-content
+			font-size: 4.6rem
+			font-weight: 700
+			color: $color
+			line-height: 1.2
+
+	&__link
+		margin-top: 4rem
+		text-align: center
+		margin-bottom: 2rem
+		a
+			font-size: 1.6rem
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+	&__btn
+		margin-top: 3rem
+		.btn
+			margin-bottom: .5rem
+			margin-right: .5rem
+			&:last-child
+				margin-right: 0
+.ym-items
+	display: flex
+	margin-left: -0.5rem
+	margin-right: -0.5rem
+	&__item
+		width: 33.33%
+		max-width: 14.5rem
+		padding-left: .5rem
+		padding-right: 0.5rem
+	&__number
+		font-size: 6rem
+		font-weight: 900
+		line-height: 1
+		margin-bottom: 1rem
+	&__title
+		font-size: 1.8rem
+		font-weight: 700
+		line-height: 1.2
+
+.screenshots
+	display: flex
+	flex-wrap: wrap
+
+	.screen-block
+		width: 20%
+		padding-bottom: 11%
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		position: relative
+		&__overlay
+			opacity: 0
+			+coverdiv
+			+tr
+			background: rgba(0,0,0,.7)
+
+		.ab-overlay__button
+			width: 6rem
+			height: 6rem
+			&:after
+				border-width: 1.3rem 0 1.3rem 2.4rem
+		&:hover
+			.screen-block__overlay
+				opacity: 1
+
+.b-discount
+	align-items: center
+	margin-bottom: -3rem
+	&__content
+		font-size: 1.4rem
+		line-height: 1.75
+		margin-bottom: 3rem
+		h5
+			font-size: 2.2rem
+			font-weight: 700
+			margin-bottom: 1rem
+		p
+			margin-bottom: .7rem
+
+	&__side
+		margin-bottom: 3rem
+
+	&__price, &__price-del
+		margin-left: 4rem
+		font-size: 6.6rem
+		font-weight: 700
+		line-height: 1
+		display: inline-block
+		vertical-align: middle
+	&__price-del
+		color: #585858
+		font-weight: 400
+		text-decoration: line-through
+
++max(1600px)
+	:root
+		--page-gutters: 7rem
+
+	.page-section
+		&__gutters
+			margin-left: -3rem
+			margin-right: -3rem
+
++max(1400px)
+	.page-main__title
+		font-size: 4rem
+	.page-main__head-wrap .btn
+		margin-top: .7rem
+	.art-main__head
+		h1
+			font-size: 4rem
+		h2
+			font-size: 2.6rem
+
+	.multipass-inner
+		&__img
+			margin-right: 4rem
+			width: 28rem
+			height: 17rem
+			.cm-wrap__img
+				img
+					width: 5.5rem
+			.cm-wrap__title
+				font-size: 2rem
+			.cm-wrap__text
+				font-size: 1.2rem
+
+		&__content
+
+			.ym-items
+				&__item
+					margin-right: 1.5rem
+
+	.your-multipass__wrap
+		.your-multipass-inner
+			margin-right: 3.5rem
+		.your-multipass__link
+			text-align: left
+	.your-multipass
+		&-inner
+			width: 39rem
+			height: 24rem
+			padding: 2rem
+			&__img
+				width: 12.5rem
+				height: 12.5rem
+				margin-right: 2rem
+				border-width: .8rem
+			&__name
+				font-size: 3rem
+
+			&__link
+				margin-top: 3rem
+
+	.ym-items
+
+		&__number
+			font-size: 4.5rem
+		&__title
+			font-size: 1.4rem
+
+	.screenshots .screen-block
+		width: 25%
+		padding-bottom: 14%
+
+	.b-discount__price, .b-discount__price-del
+		font-size: 5rem
+
++max(1200px)
+	.screenshots .screen-block
+		width: 33.33%
+		padding-bottom: 19%
+
+	.page-main
+		margin-top: -4rem
+
+	.your-multipass
+		&-inner
+			width: 34rem
+			height: 20rem
+
+			&__img
+				width: 10.5rem
+				height: 10.5rem
+
+				border-width: .6rem
+			&__name
+				font-size: 2.6rem
+
+		&__title
+			font-size: 2rem
+			margin-bottom: 1.5rem
+		&__link
+			margin-top: 2rem
+
+	.ym-items
+
+		&__number
+			font-size: 3.5rem
+		&__title
+			font-size: 1.2rem
+
+@media screen and (max-width: 1400px)
+	.error-wrap
+		&__img
+
+			width: 37.7rem
+			margin-right: 3.7rem
+
++max($mw)
+	.error-main
+		padding: 10rem 0
+	.error-wrap
+		display: block
+		&__img
+
+			width: 37.7rem
+			margin-right: 0
+			margin-bottom: 3rem
++max($mw1)
+	:root
+		--page-gutters: 2.5rem
+	.page-main
+		margin-top: 0
+
+	.page-main-wrapper
+		padding-top: 3rem
+		padding-bottom: 3rem
+
+	.page-section__gutters, .page-tabs__gutters
+		margin-left: 0
+		margin-right: 0
+
+	.b-discount__price, .b-discount__price-del
+		margin-left: 0
+		margin-right: 3rem
+
+	.alert
+		font-size: 1.4rem
+		.icon
+			&-gift
+				font-size: 2.3rem
+
+	.error-main
+		padding: 5rem 0
+	.error-wrap
+		display: block
+		text-align: center
+		&__img
+			margin-left: auto
+			margin-right: auto
+			width: auto
+			max-width: 30rem
+
+		p
+			max-width: 55rem
+			margin-left: auto
+			margin-right: auto
+
++max($mw2)
+	:root
+		--page-gutters: 1.5rem
+	.page-main__head
+		margin-bottom: 3rem
+	.page-main__content
+		padding-top: 3rem
+		padding-bottom: 3rem
+	.page-main__title
+		font-size: 3rem
+
+	.page-main__head-wrap
+		display: block
+		.btn
+			margin-left: 0
+			margin-top: 0
+			margin-bottom: 2rem
+			display: flex
+			width: 100%
+
+	.page-main
+
+		margin-left: -1.5rem
+		margin-right: -1.5rem
+
+	.page-section
+		padding-top: 6rem
+		&__gutters
+			margin-left: 0
+			margin-right: 0
+		&--b-padding
+			padding-bottom: 6rem
+		&--sm
+			padding-top: 4rem
+
+			&.page-section--b-padding
+				padding-bottom: 4rem
+
+		&--outside
+
+			margin-left: -1.5rem
+			margin-right: -1.5rem
+			padding-left: 1.5rem
+			padding-right: 1.5rem
+			padding-top: 4rem
+			padding-bottom: 4rem
+
+	.art-main__head
+		margin-bottom: 4rem
+		h1
+			font-size: 3rem
+		h2
+			font-size: 2rem
+
+	.kbdsel
+		padding: .3rem.4rem .4rem
+
+	.multipass-inner
+		display: block
+		&__img
+			margin-right: 0
+			margin-bottom: 2.5rem
+			padding-left: 1.5rem
+			padding-right: 1.5rem
+
+			.cm-wrap
+				max-width: 23rem
+				margin-left: auto
+				margin-right: auto
+				&__img
+					img
+						width: 6.5rem
+				&__title
+					font-size: 2.2rem
+
+		&__btn
+			margin-top: 3rem
+
+		&__content
+			.your-multipass__content
+				text-align: left
+			.ym-items
+				justify-content: flex-start
+
+	.your-multipass
+		margin: 4rem 0
+		&__wrap
+			display: block
+			.your-multipass-inner
+				margin-right: auto
+				margin-bottom: 2.5rem
+			.your-multipass__link
+				text-align: center
+		&__content
+			text-align: center
+
+		&__title
+			font-size: 2.2rem
+
+		&-inner
+
+			max-width: 40rem
+			width: auto
+
+		&__link
+
+			margin-bottom: 0
+
+	.ym-items
+		justify-content: center
+
+	.b-discount__price, .b-discount__price-del
+		font-size: 3.5rem
+
+	.error-main
+		padding: 4rem 0
+	.error-wrap
+
+		&__img
+
+			max-width: 25rem
+
+		p
+			max-width: 45rem
+
++max($mw3)
+	.page-main__title
+		font-size: 2.6rem
+	.page-section
+		padding-top: 4rem
+		&--sm
+			padding-top: 3rem
+		&--b-padding
+			padding-bottom: 4rem
+	.page-section--outside
+		padding-top: 4rem
+		padding-bottom: 4rem
+
+	.alert
+		font-size: 1.2rem
+		.icon
+			&-gift
+				font-size: 2rem
+	.art-main__head
+		margin-bottom: 3.5rem
+		h1
+			font-size: 2.6rem
+		h2
+			font-size: 1.8rem
+
+	.your-multipass
+
+		&__title
+			font-size: 2rem
+			margin-bottom: 1.5rem
+		&-inner
+
+			max-width: 35rem
+			height: auto
+			padding: 4.5rem 2rem
+			&__img
+
+				margin-right: 1.5rem
+
+			&__name
+				font-size: 2rem
+		&__link
+			margin-top: 2rem
+		&__btn
+			.btn
+				display: flex
+				width: 100%
+				margin-right: 0
+
+	.ym-items
+		&__number
+			font-size: 3rem
+		&__title
+			font-size: 1.2rem
+
++max($mw4)
+	.your-multipass
+		&-inner
+
+			&__img
+				width: 9rem
+				height: 9rem
+				border-width: .5rem

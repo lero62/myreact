@@ -1,0 +1,268 @@
+
++max(1400px)
+	/* Events */
+	.events-list
+		&--horizontal
+			.card-event
+				&__title
+					font-size: 1.8rem
+					margin-bottom: .5rem
+				&__img
+					width: 9rem
+					height: 9rem
+				&__date
+					font-size: 1.4rem
+				&__foot
+					padding-top: 1.4rem
+					padding-bottom: 1.4rem
+				&__price
+					font-size: 3rem
+				&__det-item
+					font-size: 1.4rem
+
++min($mw-1 + 1)
+	.visible-xxl
+		display: none !important
+
++max($mw-1)
+	.hidden-xxl
+		display: none !important
++min($mw0 + 1)
+	.visible-xl
+		display: none !important
+
++max($mw0)
+	.hidden-xl
+		display: none !important
+/* Desktop =========================*/
++min($mw + 1)
+	.visible-lg
+		display: none !important
++max($mw)
+	.hidden-lg
+		display: none !important
+	.header
+		margin-bottom: 4rem
+
+	/* Main */
+	.wrap
+		&__aside
+			margin-right: 2.5rem
+			&--right
+				margin-left: 2.5rem
+
+	.card-multipass
+		margin-bottom: 3rem
+
+	.events-list
+		&--horizontal
+			.card-event
+				width: calc(33.33% - 3rem)
+
+/* Ipad ===========================*/
++min($mw1 + 1)
+	.visible-md, .navbar
+		display: none !important
+
++max($mw1)
+	.hidden-md
+		display: none !important
+
+	body
+		padding-top: 7rem
+
+	blockquote
+		padding-left: 2.2rem
+		margin-left: -2.5rem
+	.header
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		z-index: 20
+		margin-bottom: 0
+		&__search
+			margin-left: 4rem
+			margin-right: 3rem
+			max-width: none
+	.search-top
+		background: rgba(218,83,5, 0.78)
+		border-radius: .8rem
+		&__input
+			padding-left: 5.2rem
+		.icon
+			left: 1.5rem
+
+	.mobile-menu
+		margin-left: -.5rem
+		margin-right: -.5rem
+
+	/* Main */
+	.wrap
+		flex-wrap: wrap
+
+		&__aside:not(.wrap__aside--right)
+			width: 100%
+			margin-right: 0
+
+	.w-main, .wrap__aside--right
+		padding-top: 3rem
+
+	.aside-block
+		margin-bottom: 3rem
+
+	.tags-menu
+		display: flex
+		flex-wrap: wrap
+		margin: -.5rem
+		&__item
+			margin: .5rem
+		&__link
+			background: #e9e9e9
+
+	.aside-block
+		.tags-menu + .tags-list
+			margin-top: 2rem
+
++max($mw1 - 20)
+	.side-event
+		display: none
+
+	.popular-today-swiper,
+	.based-interests-swiper,
+	.advanced-topics-swiper,
+	.react-summit-swiper,
+	.content-swiper
+		.swiper-container
+			margin-right: -2.5rem
+			margin-left: -2.5rem
+			padding-left: 2.5rem
+			padding-right: 2.5rem
+
+	.swiper-button-next
+		right: 0
+	.swiper-button-prev
+		left: 0
+/* Mobile =========================*/
++min($mw2 + 1)
+	.visible-sm
+		display: none !important
++max($mw2)
+	.hidden-sm
+		display: none !important
+
+	body
+		padding-top: 6rem
+
+	blockquote
+		font-size: 1.6rem
+		margin-left: 0
+
+	.header
+		&__container
+			height: 6rem
+		&__search
+			margin-left: 3rem
+			margin-right: 2rem
+
+	.navbar
+		top: 6rem
+
+	.w-main
+		padding-top: 3rem
+
+	.aside-head
+
+		&__dropdown
+			width: 100%
+			padding-left: 0
+
+	/* Events */
+	.events-list
+		&--horizontal
+			.card-event
+				width: calc(50% - 3rem)
+				&__body
+					padding-left: 1.2rem
+					padding-right: 1.2rem
+				&__foot
+					padding-left: 1.2rem
+					padding-right: 1.2rem
+				&__price
+					font-size: 3.5rem
+		&--small
+			.card-event
+				width: 25%
+
+	.popular-today-swiper,
+	.based-interests-swiper,
+	.advanced-topics-swiper,
+	.react-summit-swiper,
+	.content-swiper
+
+		.article-box
+			width: 38rem
+			height: 100%
+
+		.swiper-slide
+			padding-right: 1rem
+
+		// .swiper-button-next,
+		// .swiper-button-prev
+		// 	display: none
+
+/* Mobile sm ======================*/
++min($mw3 + 1)
+	.visible-xs
+		display: none !important
++max($mw3)
+	.hidden-xs
+		display: none !important
+
+	blockquote
+		font-size: 1.4rem
+	.header
+
+		&__search
+			margin-left: 2rem
+			margin-right: 1.5rem
+		&__logo
+			span
+				display: none
+	.search-top
+
+		&__input
+			padding-left: 4.5rem
+		.icon
+			left: 1.2rem
+
+	/* Events */
+
+	.events-list
+		&--horizontal
+			margin-left: 0
+			margin-right: 0
+			display: block
+			.card-event
+				width: auto
+				margin-left: 0
+				margin-right: 0
+
+		&--small
+			.card-event
+				width: 33.33%
+
+	.card-event
+		margin-bottom: 1.5rem
+
+	/* UI */
+
+	.tab-block__navitem
+		padding-left: 1.5rem
+		padding-right: 1.5rem
+
++max($mw4)
+	.events-list
+		&--small
+			.card-event
+				width: 50%

@@ -1,0 +1,580 @@
+.profile-main
+	padding: 4rem 0 10rem
+	&__title
+		font-size: 4.8rem
+		font-weight: 700
+		margin-bottom: 1rem
+
+	&__resident
+		margin-top: 0.8rem
+
+	&__side-buttons, &__side-name
+		margin-top: 2.8rem
+
+	&__team
+		margin-top: 4rem
+
+	&__aside-block
+		margin-top: 3.4rem
+		margin-bottom: 0
+
+	&__side-links, &__followers
+		margin-top: 2rem
+
+	&__mentorship
+		margin-top: 1.7rem
+		margin-bottom: 2rem
+
+	&__side-about
+		margin-top: 3rem
+
+	&__activate-multipass
+		margin: 5rem 0 4rem
+
+.profile-wrap
+	display: flex
+	align-items: flex-start
+	// max-width: 97rem 
+	&__sidebar
+		flex: none
+		width: 22.5rem
+		margin-right: 3rem
+		padding-left: 0.5rem
+
+		.aside-menu
+			margin-top: 5rem
+
+	&__content
+		flex: 1
+		min-width: 1px
+
+.resident
+	display: flex
+	align-items: center
+
+	&__icon
+		font-size: 0
+		.icon
+			color: $color-danger
+			fill: none
+			font-size: 2rem
+			margin-right: .6rem
+			top: -.1rem
+	&__title
+		font-size: 1.4rem
+		font-weight: 700
+		color: $color-danger
+		margin-right: 0.7rem
+
+	.mark-toltipe
+		width: 12rem
+
+.profile-box
+	position: relative
+	padding-top: 1rem
+	&__img
+		position: relative
+		width: 22rem
+		height: 22rem
+		margin: 0 auto
+		border-radius: 50%
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		.status
+			top: 2rem
+			right: 2rem
+
+.side-name
+	font-size: 2.2rem
+	font-weight: 700
+
+.side-buttons
+	.btn:not(:last-child)
+		margin-bottom: .5rem
+
+.fix-buttons
+	position: absolute
+	bottom: .5rem
+	left: 1rem
+	right: 1rem
+	text-align: center
+	display: flex
+	align-items: center
+	justify-content: center
+	&__item
+		border: none
+		background: rgba(0, 0, 0, 0.4)
+		+tr
+		border-radius: 50%
+		padding: 0
+		font-size: 0
+		width: 3.5rem
+		height: 3.5rem
+		.icon
+			color: #fff
+			font-size: 1.6rem
+		&:hover
+			background: rgba(0,0,0, 0.8)
+
+.profile-settings
+
+	margin-top: 3.4rem
+	&:first-child
+		margin-top: 0
+	&__item
+		margin-top: 6.5rem
+		&:first-child
+			margin-top: 0
+	&__title
+		font-weight: 700
+		font-size: 2.2rem
+		margin-bottom: 3.7rem
+	&__buttons
+
+		button[type="submit"].btn
+			min-width: 15.5rem
+
+		.btn--default
+			margin-right: 1.6rem
+			min-width: 12.2rem
+			height: 4rem
+
+	.form-field
+		margin-bottom: 1.6rem
+
+.side-links
+
+	&__wrap
+		display: flex
+		align-items: center
+	&__item
+
+		margin-bottom: 0.6rem
+		display: flex
+		align-items: center
+		flex: none
+		.icon
+			font-size: 1.6rem
+			display: block
+			color: #7B7B7B
+
+		span
+			margin-left: 1rem
+			+text-overflow
+
+		&:hover
+			.icon
+				color: #1b1b1b
+
+.followers
+	display: flex
+	justify-content: center
+	&__item
+		display: flex
+		align-items: center
+		padding-left: 1rem
+		padding-right: 1rem
+		margin-bottom: 0
+		min-width: 8rem
+		justify-content: center
+		margin-top: -0.2rem
+		margin-left: -0.1rem
+		margin-right: -0.1rem
+		height: 4.6rem
+		border: 2px solid #E1E1E1
+		.icon
+			margin-right: 0.6rem
+			flex: none
+			font-size: 1.8rem
+			color: #B0B0B0
+	&__label
+		font-size: 1.4rem
+		color: $color
+		margin-right: 0.8rem
+	&__labeled
+		font-size: 1.6rem
+		font-weight: 700
+		color: $color
+	&--list
+		display: block
+		.followers__item
+			margin-bottom: 0.5rem
+			padding-left: 0
+			padding-right: 0
+			min-width: 1px
+			margin-top: 0
+			margin-left: 0
+			margin-right: 0
+			height: auto
+			justify-content: flex-start
+			border: none
+			.icon
+				margin-right: 1rem
+				color: #7B7B7B
+
+		.followers__labeled
+			font-size: 1.4rem
+
+.achievements
+	display: flex
+	flex-wrap: wrap
+	margin-left: -0.3rem
+	margin-right: -0.3rem
+	&__item
+		margin-right: 0.3rem
+		margin-left: 0.3rem
+		margin-bottom: 0.6rem
+.achievement
+	width: 4.4rem
+	height: 4.4rem
+	border-radius: 50%
+	background-color: #E9E9E9
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	position: relative
+	display: block
+	&__badge
+		position: absolute
+		bottom: 0
+		right: 0
+
+.badge
+	background: $color-danger
+	border-radius: 1.2rem
+	height: 1.4rem
+	line-height: 1.4rem
+	padding: 0 .5rem
+	font-size: 0.8rem
+	font-weight: 700
+	text-transform: uppercase
+	display: inline-block
+	vertical-align: middle
+	color: #fff
+
+.certificate-list
+	.certificate
+		margin-bottom: 3rem
+		&:last-child
+			margin-bottom: 0
+
+.certificate
+	background: #f8f8f8
+	&__head
+		display: flex
+		align-items: center
+
+		padding: 2.2rem 3rem
+		&-right
+			display: flex
+			flex: none
+
+	&__share
+		margin-right: 2.5rem
+
+	&__cat
+		margin-right: 2rem
+
+.cer-actions
+	display: flex
+	align-items: center
+	&__btn
+		margin-right: 1.5rem
+		width: 2.6rem
+		height: 2.6rem
+		padding: 0
+		border: none
+		display: flex
+		align-items: center
+		justify-content: center
+		background: transparent
+		&:last-child
+			margin-right: 0
+		.icon
+			display: block
+			font-size: 1.6rem
+			color:  #B0B0B0
+
+		@media (any-hover: hover)
+			&:hover
+				.icon
+					color: $color
+.profile-team
+	display: flex
+	flex-wrap: wrap
+	margin-left: -1rem
+	margin-right: -1rem
+	&__item
+		width: 25%
+		padding-left: 1rem
+		padding-right: 1rem
+		margin-bottom: 2rem
+
+.mentorship
+	background: #F8F8F8
+	padding: 3rem
+	&__title
+		font-size: 1.6rem
+		font-weight: 700
+		margin-bottom: 1.8rem
+	&__text
+		margin-bottom: 0.4rem
+	&__price
+		width: 33rem !important
+		&-value
+			margin-bottom: 1.5rem
+			span
+				font-weight: 700
+				white-space: nowrap
+
+.activate-multipass
+	.btn
+		margin-right: .6rem
+		margin-bottom: 1rem
+
+.invite
+	display: flex
+	height: 100%
+	flex-direction: column
+	background: #F9F9F9
+	border-radius: .5rem .5rem 0 0
+	&__head
+		border-radius: .5rem
+		text-align: center
+		height: 3.2rem
+		background: #DCDCDC
+		flex: none
+	&__title
+		line-height: 3.2rem
+		text-transform: uppercase
+		color: #7E7E7E
+		font-size: 1.2rem
+		font-weight: 400
+
+	&__body
+		flex: 1
+		display: flex
+		flex-direction: column
+		padding: 3rem 2rem
+		text-align: center
+	&__email
+		font-size: 1.2rem
+		font-weight: 700
+		color: #343434
+		+text-overflow
+		margin-top: 1.3rem
+
+	&__buttons
+		margin-top: 3.2rem
+		.btn
+			margin-left: auto
+			margin-right: auto
+			max-width: 13rem
+			margin-top: 1rem
+			height: 3.2rem
+
+	&--pending
+		background: #FFFEF2
+		.invite__head
+			background: #FCF3A6
+		.invite__title
+			color: #E3A400
+
+	&--cancelled
+		background: #FFF7F7
+		.invite__head
+			background: #FFCCCC
+		.invite__title
+			color: #E26262
++max(1500px)
+	.profile-team
+		&__item
+			width: 33.33%
++max(1439px)
+	.profile-main__title
+		font-size: 4rem
+	.mentorship__price-value
+		margin-top: 2rem
+
++max(1300px)
+
+	.profile-team
+		&__item
+			width: 50%
+
+	.certificate
+		&__head
+			display: block
+			&-right
+				margin-top: 1rem
+		&__actions
+			margin-left: auto
+		&__cat
+			margin-right: 0
+
++max($mw)
+
+	.profile-wrap
+		&__sidebar
+			padding-left: 0
+			padding-right: 0
+			width: 19rem
+			margin-right: 4rem
+
+	.profile-box__img
+		width: 18.5rem
+		height: 18.5rem
+		.status
+			top: 1.3rem
+			right: 1.3rem
+
+	.profile-main__tabs
+		.tab-block__navitem
+			flex: 1 1 auto
+			justify-content: center
+			padding-left: 1rem
+			padding-right: 1rem
+			.icon
+				margin-right: 0.8rem
+
++max($mw2)
+
+	.profile-main
+		padding-bottom: 6rem
+		&__title
+			font-size: 3rem
+		&__activate-multipass
+			margin: 4rem 0 3rem
+
+	.profile-wrap
+		display: block
+		&__sidebar
+			width: auto
+
+			margin-bottom: 4rem
+			padding-left: 0
+			padding-right: 0
+
+			margin-left: auto
+			margin-right: auto
+			.aside-menu
+				// display: flex
+				// &__item 
+				// 	flex: 1
+				// 	padding-left: .5rem
+				// 	padding-right: .5rem
+
+	.profile-box
+		padding-top: 0
+		&__img
+			margin-bottom: 3rem
+
+	.profile-settings
+		margin-bottom: 3rem
+		&__item, &__buttons
+			margin-top: 4rem
+		&__title
+			margin-bottom: 2rem
+
+	.invite
+		&__body
+			padding: 2rem 1rem
+
+	.activate-multipass
+		margin-left: -0.5rem
+		margin-right: -0.5rem
+		display: flex
+		align-items: flex-start
+		.btn
+			flex: 1
+			margin-left: 0.5rem
+			margin-right: 0.5rem
+			margin-bottom: 1rem
+
+	.mentorship
+		padding: 2.2rem 2rem
+
+	.certificate
+		&__head
+			padding: 1.8rem 2rem
+		&__share
+			margin-right: 1.8rem
+
+	.cer-actions__btn
+		margin-right: .5rem
+
++max($mw3)
+
+	.profile-main
+		padding: 3rem 0 4rem
+		&__title
+			font-size: 2.6rem
+
+		&__tabs
+			.tab-block__navitem
+
+				.icon
+					display: none
+
+	.profile-box
+		&__img
+			width: 15rem
+			height: 15rem
+
+	.profile-settings
+		margin-bottom: 0
+		&__buttons
+			.btn--default
+				margin-bottom: 1rem
+				margin-right: 0
+			.btn
+				width: calc(100% - 2rem)
+				display: flex
+
+	.profile-wrap
+
+		&__sidebar
+			.aside-menu
+				margin-top: 3rem
+
+	.profile-item--team
+		.profile-item__img
+			width: 10rem
+			height: 10rem
+			.status
+				top: .5rem
+				right: 0.5rem
+		.profile-item__name
+			font-size: 1.6rem
+
+	.invite
+		&__email
+			margin-top: 0
+		&__buttons
+			margin-top: 1rem
+
++max($mw4)
+	.profile-main
+		padding: 3rem 0 4rem
+		&__title
+			font-size: 2.6rem
+
+		&__tabs
+			.tab-block__navtitle
+				font-size: 1.2rem
+			.tab-block__navitem
+				padding-left: 0.5rem
+				padding-right: 0.5rem
+				.kbd
+					margin-left: 0.5rem
+
+	.activate-multipass
+		display: block
+		margin-left: 0
+		margin-right: 0
+		.btn
+			width: 100%
+			margin-left: 0
+			margin-right: 0
+			margin-bottom: 1rem

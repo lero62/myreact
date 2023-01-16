@@ -1,0 +1,104 @@
+
+.events-swiper
+	position: relative
+	margin-bottom: 4rem
+	.swiper-slide 
+		width: 14rem !important
+		height: auto !important
+		padding-right: 1rem
+		&:last-child 
+			padding-right: 0
+	.card-event
+		margin: 0
+		height: 100%
+		&__body
+			padding: 2.2rem .3rem
+		&__img 
+			width: 6rem
+			height: 6rem
+
+		&__title 
+			font-size: 1.4rem
+			line-height: 1
+		&__date 
+			font-size: 1.1rem
+
+.events-swiper:hover 
+	.swiper-button-prev, 
+	.swiper-button-next 
+		opacity: 1
+
+.swiper-button-prev, 
+.swiper-button-next 
+	display: flex 
+	align-items: center
+	justify-content: center
+	border-radius: 50%
+	height: 4.6rem
+	width: 4.6rem
+	background: #fff 
+	box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.1)
+	z-index: 3
+	position: absolute
+	top: 50%
+	margin-top: -2.3rem
+	cursor: pointer 
+	transition: opacity 0.2s linear
+	opacity: 0
+	.icon 
+		font-size: 1.8rem
+
+	&:hover 
+		box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1)
+.swiper-button-prev 
+	left: 1rem
+	&:hover .icon
+		animation: swiper-button-left 0.4s ease-out
+		left: 0
+
+.swiper-button-next 
+	right: 1rem
+	&:hover .icon
+		animation: swiper-button-right 0.4s ease-out
+		left: 0
+
+
+.swiper-button-disabled
+	display: none
+@keyframes swiper-button-right 
+	0% 
+		left: 0
+	50% 
+		left: .3rem
+	100% 
+		left: 0
+
+@keyframes swiper-button-left 
+	0% 
+		left: 0
+	50% 
+		left: -.3rem
+	100% 
+		left: 0
+
+
++max($mw1 - 20)
+	
+	.events-swiper
+		.swiper-container
+			padding-right: 2.5rem
+			margin-right: -2.5rem
+			margin-left: -2.5rem
+			padding-left: 2.5rem
+
+
++max($mw2)
+	
+	.events-swiper
+		.swiper-container
+			padding-right: 1.5rem
+			margin-right: -1.5rem
+			margin-left: -1.5rem
+			padding-left: 1.5rem
+		&__prev, &__next 
+			display: none

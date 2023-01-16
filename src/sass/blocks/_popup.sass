@@ -1,0 +1,1065 @@
+.popup-wrapper
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 99
+	padding: 6.6rem 3rem 3rem
+	overflow: hidden
+	overflow-y: auto
+	background: rgba(0, 0, 0, 0.9)
+
+.popup-content
+
+	width: 100%
+	&__close
+		appearance: none
+		background: none
+		border: 0
+		position: absolute
+		top: 1rem
+		right: 1rem
+		cursor: pointer
+
+		height: 4rem
+		width: 4rem
+		display: flex
+		align-items: center
+		justify-content: center
+
+		.icon
+			color: #fff
+			font-size: 3rem
+		&:hover .icon
+			color: rgba(#fff, 0.7)
+	&__head
+		text-align: center
+		max-width: 92rem
+		margin: 0 auto 5rem
+	&__title
+		font-size: 4.6rem
+		font-weight: 700
+		color: #fff
+		margin-bottom: 2.1rem
+	&__text
+		color: #fff
+		font-size: 1.6rem
+		max-width: 60rem
+		margin-left: auto
+		margin-right: auto
+.popup
+	max-width: 82.9rem
+	width: 100%
+	margin: 0 auto
+	padding: 4rem
+	position: relative
+	border-radius: 1.5rem
+	box-shadow: 10px 10px 30px 30px rgba(0, 0, 0, 0.04)
+	background: #fff
+	text-align: left
+
+	&__head
+		margin-bottom: 4rem
+	&__title
+		font-weight: 700
+		font-size: 3.2rem
+		margin-bottom: 1rem
+
+	&__descr
+		font-size: 1.4rem
+	&__text
+		margin-bottom: 2.8rem
+		.link
+			font-size: inherit
+	&__close-link
+		margin-top: 3.5rem
+		text-align: center
+		a
+			font-size: 1.2rem
+
+	&__sharing
+		margin-top: 3rem
+		padding: 3rem 4.1rem
+		margin: 3rem -4.1rem -4.1rem -4.1rem
+		border-radius: 0 0 1.5rem 1.5rem
+		.popup__close-link
+			a
+				color: #fff
+
+.popup-search
+	position: relative
+	.icon
+		position: absolute
+		top: 1rem
+		right: 1rem
+		font-size: 2.2rem
+		fill: none
+	&__input
+		font-size: 1.4rem
+
+.by-multipass
+	max-width: 56rem
+	margin-left: auto
+	margin-right: auto
+	&__title
+		font-size: 3.2rem
+		font-weight: 700
+		text-align: center
+		margin-bottom: 1.4rem
+	&__price
+
+		display: flex
+		align-items: center
+		justify-content: center
+		.per
+			font-size: 2rem
+			font-weight: 400
+			display: inline-block
+			vertical-align: middle
+			margin-left: -0.8rem
+		.symbol
+			font-size: 2.2rem
+			display: inline-block
+			vertical-align: middle
+			margin-right: -.8rem
+		&-item
+			font-weight: 900
+			font-size: 7rem
+			line-height: 1
+			white-space: nowrap
+			& + .by-multipass__price-item
+				font-size: 5rem
+				position: relative
+				margin-left: 2rem
+				padding-left: 2rem
+				&:before
+					content: ''
+					display: inline-block
+					vertical-align: middle
+					height: 7.7rem
+					width: 0.2rem
+					background: #B0B0B0
+					transform: rotate(26.55deg)
+					position: absolute
+					top: 50%
+					margin-top: -3.7rem
+					left: -.1rem
+
+	&__tabs
+		margin-top: 4rem
+	&__seats
+		margin-top: 3.7rem
+
+	&__body
+		margin-top: 5.8rem
+
+	&__foot
+		margin-top: 6.4rem
+		text-align: center
+		.btn
+			margin-left: 0.5rem
+			margin-right: 0.5rem
+
+	&__link
+		margin-top: 2rem
+		a
+			font-size: 1.2rem
+			text-decoration: underline
+			color: $color
+			&:hover
+				text-decoration: none
+
+.time-tabs
+	display: flex
+	justify-content: center
+	&__item
+		font-size: 1.6rem
+		font-weight: 700
+		padding: 0 3rem
+		height: 4.8rem
+		display: flex
+		align-items: center
+		justify-content: center
+		position: relative
+		border: 2px solid #B0B0B0
+		cursor: pointer
+		margin-right: -0.2rem
+		z-index: 1
+		transition: z-index 0.2s linear, border-color 0.2s linear
+		&:first-child
+			border-radius: .5rem 0 0 .5rem
+		&:last-child
+			border-radius: 0 .5rem .5rem 0
+			margin-right: 0
+		&:first-child:last-child
+			border-radius: .5rem
+			margin-right: 0
+
+		&:hover, &.active
+			z-index: 2
+			border-color: $color-danger
+			color: $color-danger
+			.time-tabs__kbd
+				border-color: $color-danger
+	&__kbd
+		position: absolute
+		top: -1.3rem
+		left: 50%
+		transform: translate(-50%, 0)
+		height: 2.1rem
+		line-height: 1.7rem
+		white-space: nowrap
+		color: $color
+		background: #FFFFFF
+		border: .2rem solid #B0B0B0
+		border-radius: 3.8rem
+		font-size: 0.8rem
+		font-weight: 900
+		padding: 0 .9rem
+		pointer-events: none
+		text-transform: uppercase
+		transition: border-color 0.2s linear
+
+.seats
+	display: flex
+	align-items: center
+	justify-content: center
+	&__title
+		font-size: 1.4rem
+		color: #585858
+		margin-right: 1.4rem
+	&__input
+		width: 5.1rem
+		margin-right: 2rem
+		input
+			text-align: center
+		&--md
+			width: 7.8rem
+	&__text
+		font-size: 1.2rem
+
+	&--column
+		flex-direction: column
+		.seats
+			&__title
+				margin-right: 0
+				margin-bottom: 1rem
+			&__input
+				margin-right: 0
+
+.list-check
+	margin-bottom: -1rem
+	li
+		position: relative
+		font-size: 1.4rem
+		padding-left: 2.8rem
+		margin-bottom: 1rem
+		&:after
+			content: ''
+			display: block
+			width: 1.8rem
+			height: 1.8rem
+			background: url('../../assest/img/sprite/circle-check.svg') no-repeat center
+			background-size: contain
+			position: absolute
+			top: 0
+			left: 0
+	+min($mw2 + 1)
+		&.lg-column2
+			display: flex
+			flex-wrap: wrap
+			margin-left: -1.5rem
+			margin-right: -1.5rem
+			li
+				width: calc(50% - 3rem)
+				margin-left: 1.5rem
+				margin-right: 1.5rem
+
+/* Topics */
+
+#popup-topics .popup
+	max-width: 107.6rem
+	padding: 3rem 2.8rem
+
+.topics
+
+	margin: 5.5rem 0 0
+	overflow: hidden
+	&__item
+		margin: -.2rem
+		display: flex
+		flex-wrap: wrap
+
+	&__btn
+		height: 6rem
+		border-radius: .5rem
+		margin: .2rem
+		width: calc(20% - .4rem)
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 1rem
+		font-size: 1.6rem
+		font-weight: 700
+		cursor: pointer
+		position: relative
+		text-align: center
+		line-height: 1.1
+		&:last-child
+			margin-bottom: 0
+		&._active
+			.topics__icon
+				opacity: 1
+	&__icon
+		opacity: 0
+		pointer-events: none
+		position: absolute
+		top: .5rem
+		right: .6rem
+
+	&__pagination
+		margin-top: 3rem
+		display: flex
+		align-items: center
+		justify-content: center
+
+	&__bottom
+
+		padding-left: 9rem
+		padding-right: 9rem
+		position: relative
+		.popup-save
+			position: absolute
+			top: 50%
+			margin-top: -2rem
+			right: 0
+			.btn
+				height: 4rem
+				width: 9rem
+
+.swipe-prev, .swipe-next
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	vertical-align: middle
+	border-radius: 50%
+	border: .2rem solid #B0B0B0
+	background: transparent
+	width: 5.2rem
+	height: 5.2rem
+	margin: 0 .4rem
+	cursor: pointer
+	+tr
+	&:hover
+		background: rgba(200,200,200, 0.2)
+
+/* Confirm Email */
+
+#popup-confirm-email .popup
+	max-width: 62.3rem
+
+.btn-center
+	& + .btn
+		margin-right: -10rem
+
+/* Mentorship */
+
+/* Topics */
+
+#popup-mentorship .popup
+	max-width: 72.5rem
+	padding: 5rem 6rem
+
+/* Certificates */
+#popup-certificates
+	display: flex
+	align-items: center
+	min-height: 100%
+.popup-gallery
+	max-width: 155rem
+	margin-left: auto
+	margin-right: auto
+	padding-left: 7.6rem
+	padding-right: 7.6rem
+	&__wrapper
+		position: relative
+
+	&__prev, &__next
+		width: 4.6rem
+		height: 4.6rem
+		border: 2px solid #4C4C4C
+		border-radius: 50%
+		position: absolute
+		z-index: 2
+		cursor: pointer
+		top: 50%
+		margin-top: -2.3rem
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		transition: all 0.2s linear
+		.icon
+			color: #fff
+
+		@media (any-hover: hover)
+			&:hover
+				background: #fff
+				box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.1)
+				border-color: #fff
+				.icon
+					color: #343434
+	&__prev
+		left: -7.6rem
+
+	&__next
+		right: -7.6rem
+
+	&__panel
+		display: flex
+		align-items: center
+		padding-top: 2rem
+		padding-bottom: 2rem
+		position: relative
+		&:before
+			content: ''
+			width: 20rem
+
+		.popover
+			bottom: 100%
+			margin-bottom: 4rem
+			left: 50%
+			transform: translate(-50%, 0)
+			max-width: 80%
+	&__buttons
+
+		margin-left: auto
+		.btn
+			min-width: 14rem
+			margin-right: .4rem
+			margin-left: .4rem
+			.icon
+				font-size: 1.6rem
+				margin-right: .8rem
+				&-permalink
+					font-size: 2rem
+
+	&__share
+		width: 20rem
+		margin-left: auto
+		justify-content: flex-end
+
+.popover
+	position: absolute
+	z-index: 15
+
+	color: #fff
+	background: rgba(0, 0, 0, 0.9)
+	border-radius: .2rem
+	padding: 1.2rem 1.8rem
+	font-size: 1.4rem
+	font-weight: 400
+	display: flex
+	align-items: center
+	.icon
+		color: #fff
+		margin-right: 1rem
+		top: -.1rem
+
+/* Registration workshop */
+#popup-registration-workshop
+	.popup
+		max-width: 72.5rem
+		padding: 3rem 6rem
+
+#popup-registration-workshop-successfully
+	.popup
+		max-width: 62.3rem
+		padding: 5rem
+
+.workshop-registration
+	&__box
+		padding-left: 4rem
+		padding-right: 4rem
+		margin-top: 2.6rem
+
+	&__button
+		margin-top: 2.5rem
+
+.wr-list
+	&__item, &__head
+		position: relative
+		padding-left: 4rem
+		padding-right: 4rem
+	&__item
+		margin-bottom: 1.5rem
+	&__head
+		margin-bottom: 3rem
+		.wr-list__icon
+			top: .4rem
+	&__icon
+		position: absolute
+		top: -.4rem
+		left: 0
+		width: 2.4rem
+		height: 2.4rem
+		display: flex
+		align-items: center
+		justify-content: center
+
+	&__title
+		font-size: 2.4rem
+		font-weight: 700
+
+.wr-form
+	background: #F8F8F8
+	border-radius: 1rem
+	padding: 3rem 7rem
+	&__title
+		font-size: 1.4rem
+		font-weight: 400
+		margin-bottom: 2rem
+
+	label
+		color: #585858
+		font-size: 1.2rem
+.wr-box
+	background: #F8F8F8
+	border-radius: 1rem
+	padding: 3rem
+	&__title
+		margin-bottom: 2rem
+		text-align: center
+	&__button
+		margin-top: 2rem
+
+.wr-check-list
+	margin-top: 2.6rem
+	padding-left: 7rem
+	padding-right: 7rem
+
+/* popup-registration-dialog */
+
+#popup-registration-dialog
+	.popup
+		max-width: 60.9rem
+	.popup-content__head
+		max-width: 60.9rem
+
+.brames
+	background: #F8F8F8
+	border-radius: 1rem
+	padding: 1.5rem 3rem
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	&__text
+		flex: 1 1 auto
+		padding: .5rem 1rem
+	&__button
+		padding: .5rem 1rem
+		.btn
+			min-width: 22.4rem
+
+.sharing
+	background: #000000
+	&__title
+		color: #fff
+		text-align: center
+		margin-bottom: 2.5rem
+
+	&__card
+		margin-bottom: 4.1rem
+
+	&__buttons
+		text-align: center
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		margin-bottom: -0.8rem
+		margin-left: -0.4rem
+		margin-right: -0.4rem
+		.social-btn
+			flex: 1 1 14.8rem
+			max-width: 14.8rem
+			margin: 0 .4rem .8rem
+
+.sd-card
+	padding: 2.2rem 2.5rem
+	max-width: 40.3rem
+	margin-left: auto
+	margin-right: auto
+	color: #fff
+	position: relative
+	z-index: 2
+	&:after
+		content: ''
+		+coverdiv
+		background: linear-gradient(131.33deg, rgba(255, 255, 255, 0.12) 18.45%, rgba(255, 255, 255, 0.03) 73.67%)
+		box-shadow: 0px 3.58195px 22.3872px -2.68646px rgba(0, 0, 0, 0.06)
+		backdrop-filter: blur(17.9097px)
+		border: 3px solid #24FC89
+		border-radius: 12px
+		z-index: 2
+
+	&__inner
+		position: relative
+		z-index: 3
+
+	&__clip
+		span
+			position: absolute
+			left: 50%
+			top: 2rem
+			transform: translate(-50%, 0)
+			background: #161917
+			border-radius: 1.8rem
+			border: 3px solid #24FC89
+			width: 5.6rem
+			height: 1.6rem
+			z-index: 3
+
+		&:before
+			content: ''
+			position: absolute
+			bottom: calc(100% - 2.6rem)
+			left: 50%
+			transform: translate(calc(-50% / 2), 0)
+			width: 94px
+			height: 75px
+			z-index: -1
+			background: url('../../assest/img/sd-card-clip-bg-1.png') no-repeat center
+			background-size: contain
+
+		&:after
+			content: ''
+			position: absolute
+			bottom: calc(100% - 2.6rem)
+			right: 50%
+			transform: translate(calc(50% / 2), 0)
+			width: 94px
+			height: 75px
+			z-index: 3
+			background: url('../../assest/img/sd-card-clip-bg-2.png') no-repeat center
+			background-size: contain
+
+	&__top
+		padding-bottom: 1.2rem
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: relative
+		&:after
+			position: absolute
+			top: 100%
+			left: 0
+			content: ''
+			display: block
+			width: 100%
+
+			height: 0.3rem
+			border-radius: 2rem
+			background: rgba(255, 255, 255, 0.1)
+
+	&__logo
+		img
+			max-width: 12rem
+
+	&__code
+		font-size: 2.2rem
+		font-weight: 700
+
+	&__body
+		display: flex
+		align-items: center
+		padding: 3rem
+	&__img
+		width: 7.5rem
+		margin-right: 2.5rem
+		flex: none
+	&__content
+		flex: 1
+		min-width: 1px
+
+	&__name
+		text-transform: uppercase
+		line-height: 1.2
+
+	&__contacts
+		font-size: 1.2rem
+		margin-top: 0.5rem
+
++max(1400px)
+	.popup-content__title
+		font-size: 4rem
+	.popup-content__head
+		max-width: 82.9rem
+
++max(1199px)
+
+	.popup-gallery
+		&__panel
+			&:before
+				display: none
+
+			.popover
+
+				margin-bottom: 3rem
+		&__buttons
+			margin-left: -.5rem
+		&__share
+			width: auto
++max($mw1)
+
+	.by-multipass
+		&__title
+			font-size: 2.8rem
+		&__price
+
+			.symbol
+				margin-right: -0.5rem
+			.per
+				margin-left: -0.2rem
+				font-size: 1.8rem
+			&-item
+				font-size: 5rem
+				& + .by-multipass__price-item
+					font-size: 3rem
+		&__tabs
+			margin-top: 3rem
+		&__seats
+			margin-top: 3rem
+		&__body
+			margin-top: 4rem
+
+		&__foot
+			margin-top: 5rem
+
+	.popup-search
+		margin-top: 2.5rem
+
+	.topics
+		margin-top: 3.5rem
+		&__btn
+			font-size: 1.4rem
+			height: 5.5rem
+			width: calc(25% - .4rem)
+
++max($mw2)
+	.popup-wrapper
+		padding-left: 1.5rem
+		padding-right: 1.5rem
+		padding-bottom: 1.5rem
+	.popup-content__head
+		margin-bottom: 3.5rem
+	.popup-content__title
+		font-size: 2.6rem
+
+	.popup-content__text
+		font-size: 1.4rem
+
+	.popup
+		padding: 3rem
+		&__title
+			font-size: 3rem
+		&__text
+			margin-bottom: 1.6rem
+			font-size: 1.2rem
+
+		&__sharing
+			margin-left: -3rem
+			margin-right: -3rem
+			padding-left: 3rem
+			padding-right: 3rem
+
+	.by-multipass
+
+		&__price
+
+			.symbol
+				font-size: 1.3rem
+				margin-right: -.2rem
+			.per
+				margin-left: -0.2rem
+				font-size: 1.3rem
+			&-item
+				font-size: 4rem
+				& + .by-multipass__price-item
+					font-size: 2.8rem
+
+	.by-multipass__price-item+.by-multipass__price-item:before
+		height: 5rem
+		margin-top: -2.1rem
+
+	.time-tabs__item
+
+		font-size: 1.4rem
+		height: 4rem
+
+		flex: 1
+		padding-left: 0.5rem
+		padding-right: 0.5rem
+
+	.time-tabs__kbd
+		font-size: 0.7rem
+		padding-left: 0.5rem
+		padding-right: 0.5rem
+
+	/* Topics */
+
+	.topics
+
+		&__btn
+			width: calc(33.33% - .4rem)
+
+	.swipe-next, .swipe-prev
+		width: 4rem
+		height: 4rem
+
+	/* Mentorship */
+	#popup-mentorship .popup
+		padding: 3rem
+
+	/* Certificates */
+
+	.popup-gallery
+		padding-left: 0
+		padding-right: 0
+		&__wrapper
+			text-align: center
+		&__prev, &__next
+			position: static
+			margin-top: 1.5rem
+		&__prev
+			margin-right: 1rem
+
+		&__panel
+			.popover
+				margin-bottom: 8rem
+
+		&__buttons
+			.btn
+				min-width: 4rem
+				padding-left: .5rem
+				padding-right: .5rem
+				span
+					display: none
+				.icon
+					margin-right: 0
+
+	.popover
+		font-size: 1.2rem
+		padding: 1rem 1.5rem
+
+	#popup-registration-workshop, #popup-registration-workshop-successfully
+		.popup
+			padding: 3rem
+
+	.wr-form, .wr-check-list
+		padding-left: 3rem
+		padding-right: 3rem
+	.wr-list
+		&__head
+			.wr-list__icon
+				top: 0
+		&__title
+			font-size: 1.8rem
+
+	.brames
+		display: block
+		padding: 1rem
+
+		text-align: center
+		&__button
+			.btn
+				width: 100%
+				min-width: 1px
+
+	.sharing__card
+		margin-bottom: 2.5rem
+
++max($mw3)
+	.popup-content__title
+		font-size: 2rem
+	.popup-content__text
+		font-size: 1.2rem
+
+	.popup
+		padding: 2rem
+		&__title
+			font-size: 2rem
+		&__descr
+			font-size: 1.2rem
+		&__close-link
+			margin-top: 2.5rem
+
+		&__sharing
+			margin-left: -2rem
+			margin-right: -2rem
+			padding-left: 2rem
+			padding-right: 2rem
+
+	.by-multipass
+		&__title
+			font-size: 2.4rem
+			margin-bottom: 1rem
+		&__price
+
+			.symbol
+				margin-right: -.2rem
+				font-size: 1.2rem
+			.per
+				margin-left: -0.2rem
+				font-size: 1.1rem
+
+			&-item
+				font-size: 3rem
+				& + .by-multipass__price-item
+					font-size: 2rem
+					margin-left: 1.4rem
+					padding-left: 1.4rem
+					&:before
+						height: 3rem
+						margin-top: -1.5rem
+		&__tabs
+			margin-top: 2rem
+		&__seats
+			margin-top: 2rem
+		&__body
+			margin-top: 3rem
+
+		&__foot
+			margin-top: 4rem
+
+			.btn
+				margin-left: 0
+				margin-right: 0
+
+	/* Topics */
+
+	.topics
+
+		&__btn
+			font-size: 1.2rem
+			height: 5rem
+			width: calc(50% - .4rem)
+		&__icon
+			top: .3rem
+			right: .3rem
+
+		&__bottom
+			padding-left: 0
+			padding-right: 0
+
+			.popup-save
+				position: static
+				width: 100%
+				margin-top: 2rem
+				.btn
+
+					width: 100%
+					display: flex
+
+	.popup-search, .topics, .topics__pagination
+		margin-top: 2rem
+
+	/* Confirm Email */
+	.btn-center
+		& + .btn
+			margin-right: 0
+
+	/* Mentorship */
+	#popup-mentorship,
+	#popup-registration-workshop, #popup-registration-workshop-successfully
+		.popup
+			padding: 2rem
+
+	.wr-list__item, .wr-list__head
+		padding-right: 0
+		padding-left: 3.4rem
+
+	.wr-list
+		&__head
+			margin-bottom: 2rem
+
+		&__item
+			margin-bottom: 1rem
+			font-size: 1.4rem
+	.workshop-registration__box
+		padding-left: 0
+		padding-right: 0
+		margin-left: -2rem
+		margin-right: -2rem
+
+	.wr-form, .wr-check-list, .wr-box
+		padding-left: 2rem
+		padding-right: 2rem
+
+	.wr-form
+		border-radius: 0
+
+	.sd-card
+		max-width: 33.5rem
+		&:after
+			border-width: .2rem
+		&__clip
+			span
+				width: 3.6rem
+				height: 0.8rem
+				border-width: .2rem
+			&:after
+				bottom: calc(100% - 2.5rem)
+				width: 64px
+				height: 57px
+			&:before
+				bottom: calc(100% - 2.5rem)
+				width: 64px
+				height: 57px
+		&__logo img
+			max-width: 8.6rem
+
+		&__code
+			font-size: 1.4rem
+		&__body
+			padding-bottom: 0
+			padding-top: 2.2rem
+			padding-left: 4vw
+			padding-right: 0
+		&__img
+			width: 6rem
+			margin-right: 1.6rem
+
+	.sharing__buttons
+		.social-btn
+			flex: 1 1 auto
+			padding: 0 .5rem
+			.icon
+				margin: 0
+
++max($mw4)
+	.popup__title
+		font-size: 1.8rem
+	.by-multipass
+		&__price
+			&-item
+				font-size: 2.8rem
+				& + .by-multipass__price-item
+					font-size: 1.8rem
+
+	.sd-card
+		padding: 2rem 1.5rem
+
+		&__logo img
+			max-width: 8rem
+		&__code
+			font-size: 1.2rem
+		&__body
+
+			padding-bottom: 0
+			padding-top: 2.2rem
+		&__img
+			width: 5rem
+		&__name
+			font-size: 1.4rem
+		&__contacts
+			font-size: 1.1rem

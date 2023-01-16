@@ -1,0 +1,315 @@
+
+.event
+	margin: 0 calc(var(--page-gutters) * -1)
+
+	&__head
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		padding: 5rem var(--page-gutters) 8rem
+	&__top
+		display: flex
+		justify-content: space-around
+		align-items: center
+		margin-bottom: 3.5rem
+
+	&__img
+
+		width: 14.8rem
+		height: 14.8rem
+		img
+			width: 100%
+			height: 100%
+			border-radius: 50%
+			object-fit: cover
+	&__text
+		font-size: 2rem
+		font-weight: 700
+		width: 30rem
+		text-align: center
+		.icon
+			display: inline-block
+			vertical-align: middle
+			margin-right: 0.2rem
+			top: -.2rem
+			fill: none
+			font-size: 2.2rem
+
+	&__name
+		font-size: 3.6rem
+		font-weight: 700
+		text-align: center
+		margin-bottom: 3.5rem
+
+	&__title
+		font-size: 6rem
+		font-weight: 700
+		line-height: 1
+		text-transform: uppercase
+		text-align: center
+		max-width: 104rem
+		margin-left: auto
+		margin-right: auto
+
+	&__descr
+		text-align: center
+		margin-top: 3rem
+
+	&__ev-items
+		margin-top: 5rem
+
+	&__button
+		margin-top: 4rem
+		text-align: center
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		margin-bottom: -1rem
+		.btn
+			height: 5.2rem
+			min-width: 20rem
+			margin-left: 1rem
+			margin-right: 1rem
+			margin-bottom: 1rem
+		&-text
+			width: 100%
+			text-align: center
+			margin-bottom: 3rem
+
+	&__body
+		padding: 5rem var(--page-gutters)
+
+	&__info
+		max-width: 104rem
+		margin-left: auto
+		margin-right: auto
+		&-text
+			columns: 2
+			column-gap: 7rem
+			font-size: 1.4rem
+
+		&--sm
+			max-width: 75.7rem
+			.event__info-text
+				columns: auto
+
+	&__tags
+		text-align: center
+		margin-top: 3rem
+		&-title
+			margin-bottom: 1rem
+
+	&__links
+		margin-top: 4.5rem
+		text-align: center
+
+.ev-links
+	&__item
+		display: inline-block
+		white-space: nowrap
+		font-size: 1.4rem
+		.icon
+			color: $color
+			font-size: 2rem
+			vertical-align: middle
+			top: -.1rem
+			margin-left: 1.5rem
+			&-link
+				font-size: 1.4rem
+				color: #7B7B7B
+				margin-left: 0
+				margin-right: .6rem
+.ev-items
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	margin-left: -2rem
+	margin-right: -2rem
+	&__item
+		display: flex
+		align-items: center
+		max-width: 25rem
+		flex: 1 25rem auto
+		margin-left: 2rem
+		margin-right: 2rem
+		margin-bottom: 1.5rem
+
+	&__number
+		font-size: 6rem
+		font-weight: 400
+		line-height: 1
+		margin-right: 2rem
+		flex: none
+	&__content
+		flex: 1
+		min-width: 10rem
+	&__title
+		font-size: 1.6rem
+		font-weight: 700
+	&__text
+		font-size: 1.2rem
+
++max(1600px)
+	.event
+
+		&__head
+			padding-top: 5rem
+			padding-bottom: 8rem
+		&__img
+			height: 13rem
+			width: 13rem
+		&__name
+			font-size: 3.2rem
+
+		&__title
+			font-size: 5rem
+
+	.ev-items
+		margin-left: -1rem
+		margin-right: -1rem
+		&__item
+
+			max-width: 22rem
+			margin-left: 1rem
+			margin-right: 1rem
+			margin-bottom: 1rem
+
+		&__number
+			font-size: 4.6rem
+
++max(1400px)
+	.event
+		&__head
+			padding-bottom: 6rem
+		&__top
+			margin-bottom: 3rem
+			justify-content: space-between
+		&__img
+			height: 12rem
+			width: 12rem
+		&__name
+			font-size: 3rem
+			margin-bottom: 3rem
+		&__text
+			font-size: 1.6rem
+			width: 22rem
+		&__title
+			font-size: 4.4rem
+
+		&__ev-items
+			margin-top: 4rem
+		&__button
+			margin-top: 4rem
+
+	.ev-items
+
+		&__number
+			font-size: 4rem
+			margin-right: 1.5rem
+
++max(1200px)
+	.event
+		&__title
+			font-size: 4rem
+
+	.ev-items
+		&__number
+			font-size: 4rem
+			margin-right: 1.5rem
+
++max($mw2)
+
+	.event
+
+		&__head
+			padding-bottom: 3rem
+			padding-top: 3rem
+		&__top
+			margin-bottom: 2rem
+			flex-direction: column
+		&__name
+			font-size: 1.8rem
+			margin-bottom: 2rem
+		&__img
+			width: 8rem
+			height: 8rem
+			margin-bottom: 1rem
+		&__text
+			font-size: 1.4rem
+			width: 22rem
+			order: 1
+			margin-top: 0.5rem
+			.icon
+				font-size: 1.6rem
+
+		&__title
+			font-size: 2.2rem
+			line-height: 1.2
+
+		&__ev-items
+			margin-top: 3rem
+		&__body
+			padding-top: 3rem
+			padding-bottom: 3rem
+		&__button
+			margin-top: 3rem
+			&-text
+				margin-bottom: 1.5rem
+			.btn
+				width: 100%
+				margin-left: 0
+				margin-right: 0
+				height: 4rem
+		&__info-text
+			columns: auto
+
+		&__links
+			margin-top: 3rem
+	.ev-items
+		&__item
+			display: block
+			width: calc(33.33% - 2rem)
+			text-align: center
+			min-width: 18rem
+			margin-bottom: 2rem
+		&__number
+			font-size: 3rem
+			margin-right: 0
+			margin-bottom: 0.6rem
+
+	.event-main
+		&__tabs
+			.tab-block__navitem
+				flex: 1
+				justify-content: center
+				padding-left: 0.5rem
+				padding-right: 0.5rem
+				.icon
+					display: none
+
++max($mw3)
+
+	.ev-items
+		margin-left: -0.5rem
+		margin-right: -0.5rem
+		&__item
+			width: calc(50% - 1rem)
+			min-width: 1px
+			margin-left: 0.5rem
+			margin-right: 0.5rem
+		&__number
+			font-size: 2.8rem
+
+	.event-main
+		&__tabs
+			.tab-block__navtitle
+				font-size: 1.2rem
+				&:before
+					display: none
+				span
+					display: none
+			.tab-block__navitem
+				.icon
+					display: block
+					margin-right: 0.6rem
+					font-size: 2.8rem

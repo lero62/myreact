@@ -1,0 +1,160 @@
+.tags-wrapper
+	margin-bottom: -3rem
+
+	&__item
+		margin-bottom: 3rem
+.tag-box
+	background: #fff
+	border-radius: .7rem
+	border-bottom-width: .6rem
+	border-bottom-style: solid
+	height: 100%
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+
+	&__link
+		display: block
+		padding: 1.4rem 1.8rem 1.2rem
+		height: 100%
+
+	&__link:hover
+		text-decoration: none
+
+	&__title
+		flex: none
+		font-size: 1.8rem
+		font-weight: 700
+		color: $color
+		margin-bottom: 1.2rem
+		line-height: 1
+		&-inner
+			position: relative
+			padding-right: 2.3rem
+			display: inline-flex
+			.tb-join
+				position: absolute
+				right: 0
+				top: .5rem
+				z-index: 3
+
+	&__btn
+		padding: 0
+		margin: 0
+		border: 0
+		background: 0
+
+	&__descr
+		font-size: 1.2rem
+		max-height: 4.8rem
+		flex: none
+		+ellipsis(3)
+		margin-bottom: auto
+	&__details
+		flex: none
+		margin-bottom: 1.1rem
+		margin-left: 1.8rem
+		margin-right: 1.8rem
+
+	&:hover
+		text-decoration: none
+	&--st1
+		border-color: #CBFF00
+	&--st2
+		border-color: #BE113A
+	&--st3
+		border-color: #AB5200
+	&--st4
+		border-color: #FF1656
+
+	&--st5
+		border-color: #2F38FF
+	&--st6
+		border-color: #FF00C0
+	&--st7
+		border-color: #00FF00
+	&--st8
+		border-color: #00FFE0
+
+	&--st9
+		border-color: #FFD600
+	&--st10
+		border-color: #7433FF
+	&--st11
+		border-color: #FF3D00
+	&--st12
+		border-color: #6DC200
+
+.tb-details
+	display: flex
+	&__item
+		margin-right: .8rem
+		font-size: 1rem
+		font-weight: 700
+		span
+
+			text-transform: uppercase
+			color: #C4C4C4
+		strong
+
+			color: $color
+		&:last-child
+			margin-right: 0
+
+	&__link
+		color: #C4C4C4
+
+.tb-join
+	cursor: pointer
+	display: inline-block
+	vertical-align: middle
+	position: relative
+	z-index: 3
+	.icon
+		color: #C4C4C4
+		font-size: 1.4rem
+		display: block
+		&-check-circle
+			display: none
+
+	&._active
+		.icon-plus
+			display: none
+		.icon-check-circle
+			display: block
+
+	&:hover
+		.icon
+			color: $color
+
++max($mw2)
+	.tags-wrapper
+		margin-bottom: -1.3rem
+		&__item
+			margin-bottom: 1.3rem
+
++max($mw3)
+	.tag-box
+		&__link
+			padding: 1.2rem 1.2rem .8rem
+		&__title
+			font-size: 1.4rem
+			&-inner
+				display: block
+		&__descr
+			font-size: 1rem
+			max-height: 4.2rem
+		&__details
+			margin-left: 1.2rem
+			margin-right: 1.2rem
+
+	.tb-join
+
+		.icon
+			top: -.4rem
+
+	.tb-details
+
+		&__item
+			margin-right: .5rem
+			font-size: .9rem

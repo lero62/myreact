@@ -1,0 +1,658 @@
+
+.article-main
+	padding: 4rem 0
+	max-width: 75.7rem
+	+min(1471px)
+		&--full
+			max-width: none
+	&__body
+		max-width: 75.7rem
+
+	&__wrap
+		display: flex
+
+	&__side
+		width: 19.1rem
+		margin-left: 4.5rem
+		flex: none
+	&__content
+		flex: 1
+		min-width: 1px
+	&__title
+		line-height: 1
+		font-size: 4.2rem
+		margin-bottom: 2.5rem
+
+	&__tags
+		margin-bottom: 2.3rem
+		margin-top: 2.5rem
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		.tags-list
+			align-self: center
+			margin-right: 2rem
+	&__panel
+
+		margin-bottom: 3rem
+		&:last-child
+			margin-bottom: 0
+
+	&__figure
+		margin-left: -6.5rem
+		margin-right: -6.5rem
+		margin-bottom: 4.5rem
+
+		img
+			width: 100%
+
+		&.b-box
+			padding-left: 6.5rem
+			padding-right: 6.5rem
+
+	&__bookmarks-btn
+		margin-bottom: 3rem
+
+	&__row
+		display: flex
+		align-items: flex-start
+		.article-main__body
+			flex: 1 1 75.7rem
+	&__aside
+		flex: auto
+		order: 1
+		margin-left: 4.5rem
+
+.am-aside
+
+	&-list
+		width: 19.1rem
+		&__item
+			margin-bottom: 0.5rem
+
+.video-lock
+	background: #000
+	&__head
+		height: 28.4rem
+		background: url('../../assest/img/video-lock-bg.png') no-repeat center
+		background-size: cover
+		position: relative
+	&__overlay
+		+coverdiv
+		+min($mw1 + 1)
+			.ab-overlay__lock
+				width: 15.3rem
+				height: 15.3rem
+				.icon
+					font-size: 5rem
+
+	&__main
+		padding: 5rem 4.5rem
+	&__title
+		color: #fff
+		font-size: 3.2rem
+		font-weight: 700
+		margin-bottom: .7rem
+		.kbdsel
+			background: rgba(240, 240, 240, 0.2)
+
+	&__sub
+		color: $color-danger
+		font-size: 2rem
+		font-weight: 400
+	&__btn
+		margin-top: 3rem
+
+.am-box
+	&__body
+		background: #000
+		color: #fff
+		text-align: center
+		padding: 8rem
+	&__wrap
+		max-width: 620px
+		margin-left: auto
+		margin-right: auto
+	&__icon
+		margin-bottom: 4.5rem
+		margin-top: 2rem
+		.icon
+			font-size: 6.2rem
+			display: block
+			margin-left: auto
+			margin-right: auto
+	&__title
+		font-size: 2.4rem
+		font-weight: 700
+		margin-bottom: 1.8rem
+
+	&__buttons
+		margin-top: 4.5rem
+		.btn
+			margin-left: 0.3rem
+			margin-right: 0.3rem
+			min-width: 17rem
+		.btn--default
+			color: #fff
+			&:hover
+				color: #fff
+
+	&__footer
+		border-top: .1rem solid #636363
+		padding: 2.7rem 0 0
+		margin-top: 5rem
+
+		&-title
+			color: #FF6600
+			font-size: 1.6rem
+			max-width: 43rem
+			margin-left: auto
+			margin-right: auto
+		&-button
+			margin-top: 2.7rem
+
+			.btn
+				min-width: 17rem
+
+.wshos
+	margin-bottom: 2rem
+	&__title
+		margin-bottom: 1rem
+		font-weight: 700
+		font-size: 1.6rem
+	&__wrap
+		display: flex
+
+	&__img
+		flex: none
+		margin-right: 1rem
+
+		img
+			width: 2.6rem
+			height: 2.6rem
+			border-radius: 50%
+			object-fit: cover
+	&__content
+		align-self: center
+		flex: 1
+		min-width: 1px
+	&__name
+		font-size: 1.4rem
+		font-weight: 400
+		+text-overflow
+		color: #585858
+
+.am-event
+	display: flex
+	align-items: center
+	flex: none
+	max-width: 18rem
+	&__img
+		width: 3.5rem
+		height: 3.5rem
+		border-radius: 50%
+		object-fit: cover
+		flex: none
+		margin-right: 1rem
+	&__title
+		font-size: 1.4rem
+		+ellipsis(2)
+		line-height: 1.2
+		max-height: 3.2rem
+
+.panel
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	&__right
+		display: flex
+		align-items: center
+		flex: 1 1 auto
+		padding-top: .5rem
+		padding-bottom: .5rem
+
+	&__ab-author
+		margin-right: 2rem
+		flex: none
+		max-width: 30rem
+
+	&__time
+		padding-right: 3rem
+		margin-right: auto
+		flex: none
+		padding-top: 0.6rem !important
+		padding-bottom: 0.5rem
+		.icon
+			color: #B0B0B0
+
+	&__date
+		margin-right: 3rem
+		padding-top: 0.5rem
+		padding-bottom: 0.5rem
+	&__share
+		padding-top: 0.5rem
+		padding-bottom: 0.5rem
+
+	&__buttons
+		margin-right: 2rem
+		flex: 30 1 auto
+		margin-top: 1rem
+		margin-bottom: 1rem
+		.btn
+			margin-right: 0.5rem
+			&:last-child
+				margin-right: 0
+
+	&--reverse
+		flex-direction: row-reverse
+		.panel__buttons
+			order: 1
+
+.bookmarks-btn
+	.btn
+		margin-right: 0.5rem
+		.icon
+			fill: none
+			stroke-width: .1rem
+			font-size: 2rem
+			margin-right: 0.6rem
+
+.article-content
+	font-size: 1.6rem
+	line-height: 1.65
+	h2
+		font-size: 2.2rem
+		margin-top: 5rem
+		margin-bottom: 4rem
+
+	figure
+		margin-top: 4.2rem
+		margin-bottom: 4.2rem
+
+	ul
+		list-style-type: disc
+		margin-left: 4.8rem
+		li
+			padding-left: 1rem
+			margin-bottom: 1.5rem
+
+	a
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+
+.share
+	display: flex
+	align-items: center
+	flex: none
+	&__title
+		font-size: 1.2rem
+		color: #585858
+		margin-right: 2.2rem
+	&__links
+		display: flex
+		align-items: center
+	&__link
+		font-size: 0
+		margin-right: 1rem
+		&:last-child
+			margin-right: 0
+		&:hover
+			.icon
+				color: darken($color-danger, 6%)
+		.icon
+			color: $color-danger
+			fill: currentColor
+			font-size: 1.6rem
+	&--dark
+		.share__link
+			&:hover
+				.icon
+					color: lighten($color, 16%)
+			.icon
+				color: $color
+
+	&--light
+		.share__title
+			color: #fff
+		.share__link
+			&:hover
+				.icon
+					color: darken(#fff, 16%)
+			.icon
+				color: #fff
+
+.date
+	font-size: 1.2rem
+	color: #585858
+
+/* Graph */
+/* --------------------------------------------------------------- */
+
+.g-stat
+	text-align: center
+	&__label
+		font-size: 1.4rem
+	&__value
+		font-weight: 900
+		font-size: 4rem
+		line-height: 1
+
+/* Edit */
+/* --------------------------------------------------------------- */
+
+.edit-block
+	margin-bottom: 2.5rem
+	&__title
+		font-size: 2.5rem
+		font-weight: 700
+		margin-bottom: 1rem
+		line-height: 1.2
+	&__text
+		color:#585858
+		margin-bottom: 1rem
+	&__input
+		min-height: 1px !important
+		&--title.form-input
+			font-size: 4.2rem
+			font-weight: 700
+			line-height: 1
+
++max(1600px)
+	.article-main__figure
+		margin-left: -3rem
+		margin-right: -3rem
+		&.b-box
+			padding-left: 3rem
+			padding-right: 3rem
+
++max(1470px)
+
+	.article-main
+		max-width: none
+		&__title
+			font-size: 4rem
+		&__wrap
+			display: block
+
+		&__side
+			width: auto
+			margin-left: 0
+			margin-top: 2rem
+			margin-bottom: 3rem
+		&__bookmarks-btn
+			margin-bottom: 1.5rem
+		&__row
+			display: block
+		&__aside
+			width: auto
+			margin-left: 0
+			margin-bottom: 2rem
+
+	.am-aside-list
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+		width: auto
+		margin-left: -0.3rem
+		margin-right: -0.3rem
+		&__item
+			width: auto
+
+			margin-right: 0.3rem
+			margin-left: 0.3rem
+			margin-bottom: 0.6rem
+
+	.am-box
+		&__body
+			padding: 5rem
+		&__icon
+			margin-bottom: 3.5rem
+		&__title
+			font-size: 2rem
+		&__footer
+
+			&-title
+				font-size: 1.4rem
+			&-button
+				.btn
+					min-width: 14rem
+
+	.edit-block
+		&__input
+			&--title.form-input
+				font-size: 4rem
+
+	.wshos
+		display: flex
+		align-items: center
+		&__title
+			margin-bottom: 0
+			flex: none
+			margin-right: 1rem
+		&__wrap
+			flex: 1
+			min-width: 1px
+
++max($mw)
+	.g-stat
+
+		&__value
+			font-size: 3.4rem
+			line-height: 1.2
++max($mw1)
+
+	.article-main
+		max-width: none
+		&__figure
+			margin-left: -2.5rem
+			margin-right: -2.5rem
+			&.b-box
+				padding-left: 2.5rem
+				padding-right: 2.5rem
+
+	.video-lock
+		&__head
+			height: 22rem
+
+		&__main
+			padding: 4rem 2.5rem
+		&__title
+			font-size: 2.6rem
+		&__sub
+			font-size: 1.8rem
+
++max($mw2)
+	.article-main
+		max-width: none
+		&__title
+			font-size: 3rem
+			margin-bottom: 2rem
+		&__figure
+			margin-left: -1.5rem
+			margin-right: -1.5rem
+			&.b-box
+				padding-left: 1.5rem
+				padding-right: 1.5rem
+
+		&__tags
+			margin-top: 2rem
+			margin-bottom: 1.7rem
+		&__panel
+			margin-bottom: 2rem
+
+		&__figure
+			margin-bottom: 3rem
+
+	.bookmarks-btn
+		.btn
+			width: 100%
+			padding-left: 1rem
+			padding-right: 1rem
+			margin-bottom: 1rem
+			&:last-child
+				margin-bottom: 0
+
+	.am-aside-list__item
+		width: calc(50% - .6rem)
+		&--w100
+			width: calc(100% - .6rem)
+
+	.article-content
+		h2
+			margin-top: 4rem
+			margin-bottom: 3rem
+		figure
+			margin-top: 3rem
+			margin-bottom: 3rem
+		ul
+			margin-left: 3.5rem
+
+	.video-lock
+		&__head
+			height: 18rem
+
+		&__main
+			padding: 3.5rem 1.5rem
+
+		&__title
+			font-size: 2.2rem
+		&__sub
+			font-size: 1.6rem
+
+	.am-box
+		&__body
+			padding: 3rem 1.5rem
+		&__icon
+			margin-bottom: 2rem
+			margin-top: 0
+			.icon
+				font-size: 4rem
+		&__title
+			font-size: 1.6rem
+
+		&__text
+			font-size: 1.2rem
+		&__buttons
+			margin-top: 3rem
+
+		&__footer
+			margin-top: 3rem
+
+	.edit-block
+		&__title
+			font-size: 1.8rem
+		&__text
+			font-size: 1.2rem
+		&__input
+			&--title.form-input
+				font-size: 3rem
+
+	.g-stat
+		&__label
+			font-size: 1.2rem
+		&__value
+			font-size: 2.2rem
+
++max($mw3)
+	.article-main
+		padding-top: 3rem
+		padding-bottom: 3rem
+		&__title
+			font-size: 2.6rem
+		&__tags
+			display: block
+			.tags-list
+				margin-right: 0
+			.am-event
+				margin-top: 1.5rem
+
+	.wshos
+		&__title
+			font-size: 1.2rem
+
+		&__img
+			margin-right: 0.6rem
+			img
+				width: 2.4rem
+				height: 2.4rem
+		&__name
+			font-size: 1.2rem
+
+	.article-content
+		font-size: 1.4rem
+		ul
+			li
+				padding-left: 0
+
+		h2
+
+			font-size: 1.8rem
+
+	.video-lock
+		&__title
+			font-size: 1.8rem
+		&__sub
+			font-size: 1.4rem
+		&__btn
+			margin-top: 2rem
+			.btn
+				display: flex
+				width: 100%
+
+	.am-event
+		max-width: none
+		&__img
+			height: 3rem
+			width: 3rem
+		&__title
+			font-size: 1.2rem
+
+	.panel
+		&__right
+			flex-wrap: wrap
+		&__date
+			margin-right: 2rem
+		&__share
+			.share__title
+				margin-right: 1rem
+
+		&__buttons
+			width: 100%
+			margin-right: 0
+
+	.buttons
+		display: flex
+		flex-direction: column
+		.btn
+			width: 100%
+			margin-left: auto
+			margin-right: auto
+			&--save
+				order: 1
+				margin-top: 1rem
+
+	.am-box
+		&__footer
+			&-title
+				flex: 1
+				font-size: 1.2rem
+			&-button
+				margin-top: 2rem
+				margin-left: 0
+				flex: auto
+				width: 100%
+				.btn
+					width: 100%
+					display: flex
+			&-icon
+				width: 3rem
+				.icon
+					font-size: 3rem
+
+	.edit-block
+		&__input
+			&.form-input
+				font-size: 1.4rem
+			&--title.form-input
+				font-size: 2.6rem
